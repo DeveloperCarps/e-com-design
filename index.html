@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Prototype</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar electrolize">
+            <div>
+                <a href="">
+                    <img src="assets/logo.jpg" alt="">
+                </a>
+            </div>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <button>
+                <img src="assets/user.svg" alt="user">
+            </button>
+            <button>
+                <img src="assets/shopping-bag.svg" alt="cart">
+            </button>
+        </nav>
+        <div class="hero electrolize">
+            <hero-slide
+                class="slide"
+                title="Welcome to the Planet!"
+                subtitle="Where the best products are made!"
+                image="assets/two.jpg"
+            ></hero-slide>
+        </div>
+        <div class="new-arrivals electrolize">
+            <h1>New Arrrivals</h1>
+            <p>Fresh off the line and ready to play!</p>
+            <div class="products outfit">
+                <product-card
+                image="assets/one.jpg"
+                title="Product 1"
+                desc="Hello world!"
+                id="0000001"
+                price="PHP 17,500"></product-card>
+                <product-card
+                image="assets/two.jpg"
+                title="Product 2"
+                desc="Hello world!"
+                id="0000001"
+                price="PHP 8,250"></product-card>
+                <product-card
+                image="assets/tri.jpg"
+                title="Product 3"
+                desc="Hello world!"
+                id="0000001"
+                price="PHP 3,365"></product-card>
+            </div>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
