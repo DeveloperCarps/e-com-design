@@ -96,19 +96,17 @@ const components = [
                 this.shadowRoot.innerHTML = `
                     <style>
                         :host {
-                            margin: 0 10px;
+                            margin: 0 15px;
                         }
                         .card {
-                            width: 250px;
-                            height: 400px;
+                            width: 300px;
+                            height: 425px;
                             background-color: white;
                             border-radius: 5px;
-                            border: 1px solid #e0e0e0;
                             display: flex;
                             flex-direction: column;
                             align-items: start;
                             justify-content: start;
-                            padding: 15px;
                         }
                         a {
                             box-sizing: border-box;
@@ -132,6 +130,7 @@ const components = [
                             width: 100%;
                             height: auto;
                             aspect-ratio: 1/1;
+                            border-radius: 5px;
                         }
                         h3 {
                             font-size: 1.5rem;
@@ -141,14 +140,15 @@ const components = [
                             margin-top: auto;
                             display: grid;
                             width: 100%;
-                            grid-template-columns: 1fr 40px;
+                            grid-template-columns: 1fr 90px 40px;
+                            gap: 5px;
                             height: 40px;
 
                             & a {
                                 background: none;
                                 border: 1px solid #e0e0e0;
-                                color: white;
-                                padding: 5px;
+                                color: black;
+                                padding: 5px 0;
                                 border-radius: 5px;
                                 text-decoration: none;
                                 font-size: 1rem;
@@ -177,7 +177,7 @@ const components = [
                         }
                         span {
                             font-size: 1rem;
-                            margin: 10px 0;
+                            margin: 0 0 10px 0;
                         }
                     </style>
                     <div class="card">
@@ -186,6 +186,7 @@ const components = [
                         <span>${this.desc}</span>
                         <div class="pricing">
                             <p>${this.price}</p>
+                            <a id=${this.id}>Buy now</a>
                             <a id=${this.id}>
                                 <img src="assets/plus.svg"></img>
                             </a>
