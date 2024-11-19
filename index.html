@@ -23,47 +23,61 @@
                 <img src="assets/shopping-bag.svg" alt="cart">
             </button>
         </nav>
-        <div class="hero electrolize">
-            <hero-slide
-                class="slide"
-                title="Welcome to the Planet!"
-                subtitle="Where the best products are made!"
-                image="assets/two.jpg"
-            ></hero-slide>
+        <div class="hero electrolize" id="hero">
         </div>
         <div class="alert-banner outfit">
             <p id="alert-banner-one">Get 10% off on your first purchase!</p>
 
         </div>
-        <div class="new-arrivals electrolize">
-            <h1>New Arrrivals</h1>
-            <p>Fresh off the line and ready to play!</p>
-            <div class="products outfit">
-                <product-card
-                image="assets/1.jpeg"
-                title="Product 1"
-                desc="Hello world!"
-                id="0000001"
-                price="PHP 17,500"></product-card>
-                <product-card
-                image="assets/2.jpeg"
-                title="Product 2"
-                desc="Hello world!"
-                id="0000001"
-                price="PHP 8,250"></product-card>
-                <product-card
-                image="assets/3.jpeg"
-                title="Product 3"
-                desc="Hello world!"
-                id="0000001"
-                price="PHP 3,365"></product-card>
+        <div class="product-section electrolize">
+            <div class="product-banner" style="background-image: url(assets/tri.jpg);">
+                <div>
+                    <h1>New Arrrivals</h1>
+                    <p>Fresh off the line and ready to play!</p>
+                </div>
+            </div>
+            <div class="products outfit" id="new_arrivals">
+
             </div>
         </div>
+        <div class="fullscreen-button electrolize">
+            <span></span>
+            <a href="#">
+                Shop new
+            </a>
+            <span></span>
+        </div>
+        <div class="product-section electrolize" >
+            <div class="product-banner" style="background-image: url(assets/two.jpg);">
+                <div>
+                    <h1>Best-sellers!</h1>
+                    <p>Community Classics!</p>
+                </div>
+            </div>
+            <div class="products outfit" id="popular">
 
+            </div>
+        </div>
+        <div class="fullscreen-button electrolize">
+            <span></span>
+            <a href="#">
+                Shop popular
+            </a>
+            <span></span>
+        </div>
+        <footer class="footer">
+            <img src="assets/logo.jpg" alt="logo">
+            <span class="footer-desc electrolize">
+                © 2023 Planet of the Capes. All Rights Reserved.
+            </span>
+            <div class="footer-links outfit">
+                <a href="#">Shop</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+
+            </div>
+        </footer>
     </div>
-    <footer class="footer">
-
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
