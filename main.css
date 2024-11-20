@@ -78,16 +78,20 @@ body, html {
         border: none;
         border-radius: 10px;
         cursor: pointer;
-        margin: 0 10px 0 auto;
+        margin: 0 0 0 10px;
 
         & img {
             height: 100%;
             width: 40px;
         }
     }
+    & button:nth-child(2) {
+        margin-left: auto;
+    }
 
-    & button:nth-last-child(1) {
-        margin: 0 40px 0 0;
+    & .nav-dropdown {
+        display: none;
+        position: relative;
     }
 }
 
@@ -360,7 +364,6 @@ body, html {
         width: calc(30% - 100px);
     }
 }
-
 
 .footer {
     width: 100%;
